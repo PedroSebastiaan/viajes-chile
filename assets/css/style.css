@@ -18,12 +18,24 @@ body {
     font-family: var(--principalfont);
 }
 
+/* CAROUSEL */
+.header-carousel {
+    display: flex;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.main-carousel {
+    max-width: 112.5rem;
+}
+
 /* NAV */
 .navbar {
     z-index: 100;
 }
 
-.navbar-brand img{
+.navbar-brand img {
     max-width: 2.5rem;
 }
 
@@ -70,14 +82,121 @@ body {
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1400px) {
-    
+
+    /* CARDS */
+    .card {
+        min-height: 31rem;
+    }
+
+    .card-img-top {
+        max-height: 164.69px;
+    }
+
+    .card-body {
+        background-color: var(--sky);
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
 }
 
 @media screen and (max-width: 1200px) {
-    
+
+    /* CARDS */
+    .card {
+        min-height: 35rem;
+    }
+
+    .card-img-top {
+        max-height: 134.69px;
+    }
+
+    .card-body {
+        background-color: var(--sky);
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
 }
 
-@media screen and (max-width: 700px) {
-    
+@media screen and (max-width: 992px) {
+
+    /* CARDS */
+    .card {
+        min-height: 35rem;
+        min-width: 15rem;
+    }
+
+    .card-img-top {
+        min-width: 20.9rem;
+        max-height: 222.96px;
+    }
+
+    .card-body {
+        background-color: var(--sky);
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
 }
 
+@media screen and (max-width: 769px) {
+
+    /* WHO SECTION */
+    #us {
+        display: none;
+    }
+
+    /* CARDS */
+    .col {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .card {
+        width: 62%;
+    }
+
+    .card-img-top {
+        min-width: 100%;
+    }
+
+    .card-body {
+        background-color: var(--sky);
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 542px) {
+
+    /* CARDS */
+    .col {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .card {
+        width: 62%;
+        object-fit: cover;
+    }
+
+    .card-img-top {
+        min-width: 100%;
+    }
+
+    .card-body {
+        background-color: var(--sky);
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+}
