@@ -6,7 +6,7 @@
 :root {
     --principalfont: 'Montserrat', sans-serif;
     --black: #000000;
-    --sky: #00bfff;
+    --sky: #23a0ac;
 }
 
 body {
@@ -189,7 +189,7 @@ li {
     }
 
     .card-title {
-        font-size: 1.2rem;
+        font-size: 1.8rem;
     }
 
     /* FOOTER */
