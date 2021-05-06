@@ -9,13 +9,17 @@
     --sky: #00bfff;
 }
 
+body {
+    font-family: var(--principalfont);
+}
+
 hr {
     border: 3px solid;
     opacity: 1;
 }
 
-body {
-    font-family: var(--principalfont);
+li {
+    list-style-type: none;
 }
 
 /* CAROUSEL */
@@ -75,8 +79,38 @@ body {
 }
 
 /* CONTACTO */
+#contact {
+    margin-top: 2rem;
+}
+
 .contact {
     padding-bottom: 5rem;
+}
+
+/* FOOTER */
+.footer {
+    display: grid;
+    grid-template-columns: 2fr 0.7fr;
+}
+
+.footer-content {
+    display: inline-block;
+    padding: 0 auto;
+}
+
+.footer-list {
+    display: inline-block;
+    margin: 0px;
+    padding-top: 1rem;
+}
+
+.footer-item {
+    display: inline;
+    padding-right: 1.3rem;
+}
+
+.footer-title {
+    margin: 0px;
 }
 
 /* MEDIA QUERIES */
@@ -99,6 +133,12 @@ body {
     .card-title {
         font-size: 1.5rem;
     }
+
+    /* FOOTER */
+    .footer {
+        display: grid;
+        grid-template-columns: 1.5fr 0.7fr;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -118,6 +158,16 @@ body {
 
     .card-title {
         font-size: 1.2rem;
+    }
+
+    /* FOOTER */
+    .footer {
+        display: grid;
+        grid-template-columns: 1.3fr 0.7fr;
+    }
+
+    .footer-content {
+        display: block;
     }
 }
 
@@ -141,6 +191,31 @@ body {
     .card-title {
         font-size: 1.2rem;
     }
+
+    /* FOOTER */
+    .footer {
+        display: block;
+        text-align: center;
+    }
+
+    .footer-content {
+        display: inline-block;
+        padding: 0 auto;
+        text-align: center;
+    }
+    
+    .footer-list {
+        display: inline-block;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .footer-item {
+        display: inline;
+        padding: 0px;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+    }
 }
 
 @media screen and (max-width: 769px) {
@@ -157,6 +232,7 @@ body {
         justify-content: center;
         width: 100%;
     }
+
     .card {
         width: 62%;
     }
@@ -183,6 +259,7 @@ body {
         justify-content: center;
         width: 100%;
     }
+
     .card {
         width: 62%;
         object-fit: cover;
