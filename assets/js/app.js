@@ -3,7 +3,7 @@ $(document).ready(function () {
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
         return new bootstrap.Tooltip(tooltipTriggerEl)
     });
-    const links = document.querySelectorAll(".page-header ul a");
+    const links = document.querySelectorAll(".navbar-nav ul a");
 
     for (const link of links) {
         link.addEventListener("click", clickHandler);
