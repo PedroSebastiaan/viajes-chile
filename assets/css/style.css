@@ -3,6 +3,10 @@
     margin: 0px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --principalfont: 'Montserrat', sans-serif;
     --black: #000000;
