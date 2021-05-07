@@ -24,6 +24,7 @@ li {
 
 /* CAROUSEL */
 .header-carousel {
+    padding-top: 4.1rem;
     display: flex;
     text-align: center;
     align-content: center;
@@ -35,10 +36,6 @@ li {
 }
 
 /* NAV */
-.navbar {
-    z-index: 100;
-}
-
 .navbar-brand img {
     max-width: 2.5rem;
 }
