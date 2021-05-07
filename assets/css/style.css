@@ -57,6 +57,11 @@ li {
     color: var(--sky);
 }
 
+/* WHO SECTION */
+#us {
+    padding-top: 3rem;
+}
+
 /* CARDS */
 .card {
     min-height: 30rem;
