@@ -22,6 +22,14 @@ li {
     list-style-type: none;
 }
 
+.face {
+    font-family: 'Pacifico', cursive;
+}
+
+.face-up {
+    font-size: 1.6rem;
+}
+
 /* CAROUSEL */
 .header-carousel {
     padding-top: 4.1rem;
