@@ -81,6 +81,16 @@ li {
     padding-top: 3rem;
 }
 
+.fas {
+    transition: all 1s;
+}
+
+.fas:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
 /* CARDS */
 .card {
     min-height: 30rem;
