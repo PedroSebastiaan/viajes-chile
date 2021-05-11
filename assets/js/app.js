@@ -24,5 +24,26 @@ $(window).ready(function () {
             top: offsetTop,
             behavior: "smooth"
         });
-    }
+    };
+
+    var flag = false;
+    var scroll;
+
+    $(window). scroll(function(){
+        scroll = $(window).scrollTop();
+        
+        
+        if(scroll > 200){
+            if (!flag){
+                $("#dina-block").css({"background-color": "var(--sky)"});
+                flag = true;
+            }    
+        }else{
+            if (flag){
+                $("#dina-block").css({"background-color": "transparent"});
+                flag = false;
+            }
+        };
+    });
+
 });
