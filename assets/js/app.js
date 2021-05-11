@@ -35,12 +35,12 @@ $(window).ready(function () {
         
         if(scroll > 200){
             if (!flag){
-                $("#dina-block").css({"background-color": "var(--sky)"});
+                $(".dina-block").css({"background-color": "var(--sky)"});
                 flag = true;
             }    
         }else{
             if (flag){
-                $("#dina-block").css({"background-color": "transparent"});
+                $(".dina-block").css({"background-color": "transparent"});
                 flag = false;
             }
         };
